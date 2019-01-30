@@ -1,0 +1,26 @@
+{
+  "name": "block_chunk",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "block bd chunk.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "web_accessible_resources": [
+    "icon.png",
+    "jquery.min.js",
+    "popup.js"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.baidu.com/*",
+        "http://www.baidu.com/*"
+      ],
+      "js": [
+        "jquery.min.js",
+        "popup.js"
+      ]
+    }
+  ]
+}
